@@ -18,22 +18,7 @@
     </div>
     <!-- <iframe name="back" style="display:none;"></iframe> -->
     <div id="all">
-        <!-- （三）建制網站標題區(pic4) -->
-
-        <div id="title">
-            <!--3-2左上方顯示今天日期,今日瀏覽人次,纍計瀏覽人次  -->
-            <!--3-4 當系統日期變更並重新整理后,今天日期會自動改變 -->
-            <?= date("m 月d 號l"); ?> | 今日瀏覽: 1 | 累積瀏覽: 36
-            <!--3-3 右上方顯示囘首頁,點選囘首頁則返回首頁 -->
-            <a href="/index.php" style="float:right">囘首頁</a>
-        </div>
-        <div id="title2">
-            <!--3-1.設定標題圖片 02B01.jpg 替代文字為 健康促進網-回首頁 -->
-            <a href="index.php" title="健康促進網-回首頁">
-                <img src="02B01.jpg" alt="健康促進網-回首頁">
-            </a>
-
-        </div>
+        <?php include "./front/header.php"; ?>
         <div id="mm">
             <div class="hal" id="lef">
                 <a class="blo" href="?do=po">分類網誌</a>
@@ -49,7 +34,7 @@
                     <!-- 用這個或如下<span style="width: 72%; display:inline-block;"> -->
                     <marquee style="width: 72%; display:inline-block;">請民衆踴躍投稿電子報,讓電子報成爲大家相交流,分享的園地!詳見最新文章</marquee>
                     <!-- https://blog.xuite.net/angelheart45/jenniffer7799/406456753 -->
-                    <marquee behavior="bgcolor=#00FFCC" direction="right">XXXXX</marquee>
+                    <!-- <marquee direction="right">XXXXX</marquee> -->
                     <!-- </span> -->
                     <span style="width:18%; display:inline-block;">
                         <a href="?do=login">會員登入</a>
@@ -59,14 +44,9 @@
                 </div>
             </div>
         </div>
-        <div id="bottom">
-            本網站建議使用：IE9.0以上版本，1024 x 768 pixels 以上觀賞瀏覽 ， Copyright © 2022健康促進網社群平台 All Right Reserved
-            <!-- <br>  -->
-            服務信箱：health@test.labor.gov.tw
-            <img src="02B02.jpg" width="45">
-        </div>
+        
     </div>
-
+    <?php include "./front/footer.php"; ?>
 </body>
 
 </html>
